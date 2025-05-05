@@ -1,52 +1,85 @@
-# Information Retrieval from Multiple PDF 💁💬 with PaLM2
+# Information Retrieval System
 
+This project is an Information Retrieval (IR) system designed to efficiently search and retrieve relevant documents from a corpus based on user queries. It incorporates advanced techniques such as document indexing, ranking algorithms, and summarization to enhance the retrieval process.
 
-# How to run?
-### STEPS:
+## Features
 
-Clone the repository
+- **Efficient Document Indexing**: Implements a robust data structure to index documents for quick retrieval.
+- **Ranking Algorithm**: Retrieves the most relevant documents corresponding to a user's query.
+- **Page Ranking**: Orders retrieved documents based on their 'importance' or relevance.
+- **Summarization**: Generates concise summaries for each document along with its web link.
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.8 or higher
+- [pip](https://pip.pypa.io/en/stable/) package manager
+
+### Installation
+
+1. **Clone the repository**:
+
+   ```bash
+   git clone https://github.com/svadayar/Information-Retrieval-System.git
+   cd Information-Retrieval-System
+   ```
+
+2. **Create and activate a virtual environment**:
+
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
+   ```
+
+3. **Install the required packages**:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+To run the application:
 
 ```bash
-Project repo: https://github.com/
-```
-### STEP 01- Create a conda environment after opening the repository
-
-```bash
-conda create -n llmapp python=3.8 -y
+python app.py
 ```
 
-```bash
-conda activate llmapp
+Follow the on-screen prompts to input your query and retrieve relevant documents.
+
+## Project Structure
+
+```
+Information-Retrieval-System/
+├── src/
+│   ├── indexing.py
+│   ├── ranking.py
+│   ├── summarization.py
+│   └── ...
+├── research/
+│   └── ...
+├── app.py
+├── requirements.txt
+├── setup.py
+├── README.md
+└── ...
 ```
 
+- **src/**: Contains the core modules for indexing, ranking, and summarization.
+- **research/**: Includes research papers and resources related to information retrieval.
+- **app.py**: Main application file to run the IR system.
+- **requirements.txt**: Lists all Python dependencies.
+- **setup.py**: Setup script for packaging the application.
 
-### STEP 02- install the requirements
-```bash
-pip install -r requirements.txt
-```
+## Contributing
 
-### Create a `.env` file in the root directory and add your GOOGLE_API_KEY as follows:
+Contributions are welcome! Please fork the repository and submit a pull request for any enhancements or bug fixes.
 
-```ini
-GOOGLE_API_KEY= "xxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
-```
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 
-```bash
-# Finally run the following command
-streamlit run app.py
-```
+---
 
-Now,
-```bash
-open up : http://localhost:8501
-```
-
-
-### Techstack Used:
-
-- Python
-- LangChain
-- Streamlit 
-- PaLM2
-- FAISS
+For more details, visit the [GitHub repository](https://github.com/svadayar/Information-Retrieval-System).
